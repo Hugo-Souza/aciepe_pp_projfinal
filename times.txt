@@ -1,0 +1,48 @@
+Execucao das aplicacoes para analise de desempenho
+Sera executado 5 vezes cada aplicacao para ser analizado a media
+  
+  
+----------------------------------------------------------
+*** SEQUENCIAL ***
+Ex1: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 25.887696 segundos com 3001 iteracoes 
+  
+Ex2: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 25.761399 segundos com 3001 iteracoes 
+  
+Ex3: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 25.758430 segundos com 3001 iteracoes 
+  
+Ex4: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 26.430993 segundos com 3001 iteracoes 
+  
+Ex5: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 25.696570 segundos com 3001 iteracoes 
+  
+----------------------------------------------------------
+*** PARALELO OPENMP***
+Ex1: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 14.581265 segundos com 3001 iteracoes 
+  
+Ex2: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 14.618478 segundos com 3001 iteracoes 
+  
+Ex3: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 14.539251 segundos com 3001 iteracoes 
+  
+Ex4: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 14.789126 segundos com 3001 iteracoes 
+  
+Ex5: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 14.752402 segundos com 3001 iteracoes 
+  
