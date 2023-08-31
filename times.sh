@@ -23,7 +23,46 @@ echo "Ex5: "
 echo "  "
 echo "----------------------------------------------------------"
 echo "*** PARALELO OPENMP***"
+echo "*** 2 THREADS ***"
+export OMP_NUM_THREADS=2
+echo "Ex1: "
+./laplace_omp 1024
+echo "  "
+echo "Ex2: "
+./laplace_omp 1024
+echo "  "
+echo "Ex3: "
+./laplace_omp 1024
+echo "  "
+echo "Ex4: "
+./laplace_omp 1024
+echo "  "
+echo "Ex5: "
+./laplace_omp 1024
+echo "  "
+echo "----------------------------------------------------------"
+echo "*** PARALELO OPENMP***"
+echo "*** 4 THREADS ***"
 export OMP_NUM_THREADS=4
+echo "Ex1: "
+./laplace_omp 1024
+echo "  "
+echo "Ex2: "
+./laplace_omp 1024
+echo "  "
+echo "Ex3: "
+./laplace_omp 1024
+echo "  "
+echo "Ex4: "
+./laplace_omp 1024
+echo "  "
+echo "Ex5: "
+./laplace_omp 1024
+echo "  "
+echo "----------------------------------------------------------"
+echo "*** PARALELO OPENMP***"
+echo "*** 8 THREADS ***"
+export OMP_NUM_THREADS=8
 echo "Ex1: "
 ./laplace_omp 1024
 echo "  "
