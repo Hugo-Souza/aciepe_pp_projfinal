@@ -89,6 +89,26 @@ while(iter <= ITER_MAX){
 
 ## Conclusões
 
+## Discentes do Projeto
+Segue os alunos que participaram do desenvolvimento do projeto
 
+<table>
+    <tr>
+        <td align="center">
+            <a href="https://github.com/CarolElisa">
+                <img src="https://avatars.githubusercontent.com/CarolElisa" width="100px;" alt="Foto do Carol no GitHub"/><br>
+                <sub>
+                    <b>Caroline Elisa</b>
+            </a>
+        </td>
+        <td align="center">
+            <a href="https://github.com/Hugo-Souza">
+                <img src="https://avatars.githubusercontent.com/Hugo-Souza" width="100px;" alt="Foto do Hugo no GitHub"/><br>
+                <sub>
+                    <b>Hugo Souza</b>
+            </a>
+        </td>
+    </tr>
+</table>
 
 
