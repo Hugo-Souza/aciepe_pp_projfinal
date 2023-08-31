@@ -219,14 +219,14 @@ Segue os alunos que participaram do desenvolvimento do projeto
             <a href="https://github.com/CarolElisa">
                 <img src="https://avatars.githubusercontent.com/CarolElisa" width="100px;" alt="Foto do Carol no GitHub"/><br>
                 <sub>
-                    <b>Caroline Elisa</b>
+                    <b>Caroline Elisa Duarte de Souza - 795565</b>
             </a>
         </td>
         <td align="center">
             <a href="https://github.com/Hugo-Souza">
                 <img src="https://avatars.githubusercontent.com/Hugo-Souza" width="100px;" alt="Foto do Hugo no GitHub"/><br>
                 <sub>
-                    <b>Hugo Souza</b>
+                    <b>Hugo da Silva e Souza - 761211</b>
             </a>
         </td>
     </tr>
