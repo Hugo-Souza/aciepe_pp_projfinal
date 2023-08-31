@@ -84,6 +84,127 @@ while(iter <= ITER_MAX){
 
 
 ## Análise da escalabilidade: esperada e obtida
+Para verificar a escalabilidade foi criado um script shell para realizar a execução das aplicações 5 vezes para obter a média da execução.
+
+A máquina onde foi executado as aplicações tanto a sequencial quanto a paralela com openMP possui as seguintes configurações de CPU:
+
+```
+Arquitetura:                x86_64
+Modo(s) operacional da CPU: 32-bit, 64-bit
+Ordem dos bytes:            Little Endian
+CPU(s):                     8
+Lista de CPU(s) on-line:    0-7
+Thread(s) per núcleo:       2
+Núcleo(s) por soquete:      4
+Soquete(s):                 1
+Nó(s) de NUMA:              1
+ID de fornecedor:           GenuineIntel
+Família da CPU:             6
+Modelo:                     142
+Nome do modelo:             Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+```
+
+Rodando o script shell, foi obtido os seguintes resultados de tempo de execução de cada aplicação, sendo ela serial ou paralela com variação de quantidade de threads. Segue o resultado da execução do script:
+```
+Execucao das aplicacoes para analise de desempenho
+Sera executado 5 vezes cada aplicacao para ser analizado a media
+  
+  
+----------------------------------------------------------
+*** SEQUENCIAL ***
+Ex1: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 27.776314 segundos com 3001 iteracoes 
+  
+Ex2: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 28.923202 segundos com 3001 iteracoes 
+  
+Ex3: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 30.230641 segundos com 3001 iteracoes 
+  
+Ex4: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 29.176592 segundos com 3001 iteracoes 
+  
+Ex5: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 31.026530 segundos com 3001 iteracoes 
+  
+----------------------------------------------------------
+*** PARALELO OPENMP***
+*** 2 THREADS ***
+Ex1: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 17.238071 segundos com 3001 iteracoes 
+  
+Ex2: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 17.238856 segundos com 3001 iteracoes 
+  
+Ex3: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 17.330511 segundos com 3001 iteracoes 
+  
+Ex4: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 18.996199 segundos com 3001 iteracoes 
+  
+Ex5: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 18.602503 segundos com 3001 iteracoes 
+  
+----------------------------------------------------------
+*** PARALELO OPENMP***
+*** 4 THREADS ***
+Ex1: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 10.490534 segundos com 3001 iteracoes 
+  
+Ex2: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 10.735021 segundos com 3001 iteracoes 
+  
+Ex3: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 10.556781 segundos com 3001 iteracoes 
+  
+Ex4: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 10.402260 segundos com 3001 iteracoes 
+  
+Ex5: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 10.329706 segundos com 3001 iteracoes 
+  
+----------------------------------------------------------
+*** PARALELO OPENMP***
+*** 8 THREADS ***
+Ex1: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 11.265941 segundos com 3001 iteracoes 
+  
+Ex2: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 12.927978 segundos com 3001 iteracoes 
+  
+Ex3: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 13.098629 segundos com 3001 iteracoes 
+  
+Ex4: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 13.707154 segundos com 3001 iteracoes 
+  
+Ex5: 
+Calculo do metodo de Jacobi - grade: 1024 x 1024 
+Kernel executado em 12.881422 segundos com 3001 iteracoes 
+```
+
+Com os tempos de execução obtidos, foi possível calcular a média do tempo de execução para cada situação da aplicação:
+![Média do Tempo de Execução](https://github.com/Hugo-Souza/aciepe_pp_projfinal/assets/54536160/2b6a8daa-7242-4a6b-ae28-ac2e54e4a7e3)
+
 
 ## Discussão sobre a eficiência da solução
 
