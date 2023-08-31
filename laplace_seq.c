@@ -1,5 +1,6 @@
 /*
     Projeto Final da ACIEPE - Programacao Paralela: Arquiteturas e Estrategias de Acaleracao
+    Caroline Elisa Duarte de Souza - 795565
     Hugo da Silva e Souza - 761211
     
     Este programa resolve a equacao de Laplace em uma grade 2D regular utilizando o metodo
