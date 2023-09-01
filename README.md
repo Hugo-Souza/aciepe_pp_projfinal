@@ -207,8 +207,15 @@ Com os tempos de execução obtidos, foi possível calcular a média do tempo de
 
 
 ## Discussão sobre a eficiência da solução
+Ao analisar a média do tempo de execução, constata-se que a utilização do OpenMP para paralelização resulta em um tempo de execução menor em comparação com a execução sequencial. No entanto, é relevante notar que, em média, o tempo de execução de 12,93 segundos com 8 threads foi superior aos 10,49 segundos obtidos com 4 threads. Isso se deve ao fato de que determinadas partes do código ainda são executadas de forma sequencial, limitando assim o ganho máximo alcançado com a paralelização. Esse fenômeno é conhecido como a Lei de Amdahl. Neste contexto, o desempenho máximo é atingido quando se utilizam 4 threads.
+
+Após toda a análise da eficiência das aplicações, foi relembrado de uma diretica do OpenMP no qual poderia ser utilizado para melhorar a paralelização, pois a mesma é mais utilizada com problemas que apresentam uma quantidade maior de dados a serem computados, no qual é a omp unroll.
 
 ## Conclusões
+Através da análise do código do solucionador de Laplace, foi possível identificar oportunidades de otimização com o uso do OpenMP. Inicialmente, utilizou-se a versão sequencial e, em seguida, foram implementada as diretivas do OpenMP, como "omp parallel", que cria uma região paralela, "omp for", que divide um loop entre as threads, "omp shared", que especifica quais variáveis serão compartilhadas entre as threads na região, e "omp schedule", que controla a distribuição das iterações do loop entre as threads.
+
+Com a paralelização, notou-se uma redução no tempo de execução da aplicação à medida que aumentaram o número de threads. No entanto, também constatou-se que nem sempre a paralelização é vantajosa. Por exemplo, com 8 threads, observou-se que o tempo de execução médio foi maior do que com 4 threads, o que reforça o princípio da Lei de Amdahl, demonstrando que há limitações na melhoria de desempenho com a paralelização em certos cenários.
+
 
 ## Discentes do Projeto
 Segue os alunos que participaram do desenvolvimento do projeto
