@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "Teste"
 echo "Execucao das aplicacoes para analise de desempenho"
 echo "Sera executado 5 vezes cada aplicacao para ser analizado a media"
 echo "  "
